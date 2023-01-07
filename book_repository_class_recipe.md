@@ -1,8 +1,7 @@
 Books Model and Repository Classes Design Recipe
-Copy this recipe template to design and implement Model and Repository classes for a database table.
 
 1. Design and create the Table:
-- Completed
+Completed
 
 2. Create Test SQL seeds:
 
@@ -34,22 +33,19 @@ end
 5. Define the Repository Class interface
 
 class BookRepository
-
   def all
     # Executes the SQL query:
     # SELECT id, title, author_name FROM books;
 
     # Returns an array of book objects.
   end
-
 end
+
 6. Write Test Examples
 Write Ruby code that defines the expected behaviour of the Repository class, following your design from the table written in step 5.
 
 These examples will later be encoded as RSpec tests.
 
-
-# 1
 # Get all books
 
 repo = BookRepository.new

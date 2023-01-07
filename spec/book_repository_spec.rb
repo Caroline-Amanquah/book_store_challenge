@@ -11,7 +11,8 @@ RSpec.describe BookRepository do
   describe BookRepository do
     before(:each) do 
       reset_books_table
-    end 
+    end
+  end 
 
     it 'returns all books' do 
       repo = BookRepository.new
@@ -20,6 +21,3 @@ RSpec.describe BookRepository do
       expect(books.length).to eq(5)
     end
 end  
-
-
-
