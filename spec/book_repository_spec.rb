@@ -7,7 +7,8 @@ RSpec.describe BookRepository do
         connection = PG.connect({ host: '127.0.0.1', dbname: 'book_store_test' })
         connection.exec(seed_sql)
     end
-
+    
+  describe BookRepository do
     before(:each) do 
       reset_books_table
     end 
